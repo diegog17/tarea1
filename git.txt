@@ -1,0 +1,18 @@
+﻿Recordatorio de comandos de Git
+
+git init: El comando crea un repositorio git de forma local en una carpeta existente.
+git clone: Se utiliza este comando para obtener una copia local de un repositorio a traves de una URL dada.
+git status: Este comando mustra si los archivos que forman parte de nuestro repositorio fueron modificados o no despues de la ultima ejecución de “git commit” 
+git diff: El comando diff muestra en mayor detalle lo que previamente vimos con el comando status. Muestra exactamente los cambios hechos en los archivos que forman parte de nuestro repositorio desde el ultimo commit.
+git add: El comando agrega nuevos archivos para ser seguidos por nuestro repositorio y actualiza tambien los cambios hechos en los mismos.
+git commit: El comando crea una imagen de lo que el proyecto era en el momento de ejecutarse el mismo. Esta imagen puede ser utilizada como punto de comparación y de retorno de los cambios hechos posteriormente.
+git reset HEAD: El comando revierte las modificaciones guardadas en el ultimo commit.
+git rm: Quita un archivo del repositorio git del proximo commit, mas aun, lo quita del directorio.
+git branch: Lista las ramas (branches) que hay en el poyecto git actual teniendose como defecto la rama llamada “master”.
+git branch (nombre): Crea una nueva rama de nombre “nombre” de donde se podra seguir trabajando en el proyecto git sin afectar la o las ramas que previamente teniamos. Toma como punto de partida el ultimo commit hecho antes de ser creada dicha rama.
+git checkout (nombre): Este comando nos mueve de la rama en la que estamos ubicado hasta la rama del nombre “nombre”.
+git merge: Combina el contexto de otra rama con la rama en la que actualmente estoy trabajando. El programa resuelve la mejor manera de que ambas ramas se fusionen, mostrando en caso de no poder resolverlo, los conflictos que necesitan del usuario para completar dicha fusion.
+git log: Dado un contexto, lista todos los commit hechos para construir el contexto que es en el momento de ser invocado el comando. En dicho listado se ve el comentario y la fecha de cada commit hecho.
+git tag: Remarca un commit hecho de manera que siempre se lo pueda usar como punto de comparacion. Se utiliza para marcar un commit que sea por demas importante para el proyecto que venimos llevando a cabo.
+git remote: Con este comando se puede listar todos los repositorios disponibles en una URL dada.
+
