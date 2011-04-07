@@ -10,22 +10,20 @@ def prim(n):
 	lista = [];
 	if (n==1):
 		print "No hay numeros primos menor o igual que 1"
-	elif (n==2):
-		print "El unico numero primo es 2"
-	elif (n>2):
-		lista.append(2)
+	elif (n>1):
 		#Se utiliza la idea de que todo natural es compuesto de primos
 		#Se busca divisor de un numero n hasta sqrt(n)
+		lista.append(2)
 		for i in range(3,n+1):
 			j=0
 			primo = 1
-			while ((j<len(lista)) & (primo) & (lista[j]<=int(sqrt(i)))):
+			while (j<len(lista)) & (primo) & (lista[j]<=int(sqrt(i))):
 				if (i%lista[j]==0):
 					primo = 0
 				j = j+1
 			if (primo):
 				lista.append(i)
-		print "Lista de numeros primos menor o igual a n:"
+		print "Lista de numeros primos menor o igual a "+str(n)+":"
 		for k in range(len(lista)):
 			print lista[k]
 	else:
