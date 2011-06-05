@@ -105,7 +105,7 @@ def crearPregunta(n, lPais):
 			used.append(n)
 		else:
 			op = random.randint(0,len(lPais)-1)
-			while (op == correct) or (used.count(op) != 0):
+			while (op == n) or (used.count(op) != 0):
 				op = random.randint(0,len(lPais)-1)
 			used.append(op)
 			print i,")",lPais[op]
